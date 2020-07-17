@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:background="@drawable/input_design"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/menu_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Menu Name"
+            android:textAlignment="textStart"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+
+
+
+        <TextView
+            android:id="@+id/menu_price"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Menu price"
+            android:textAlignment="textStart"
+           android:layout_marginLeft="225dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

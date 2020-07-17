@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/log_in_logo"
+        android:src="@drawable/ic_french_fries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:padding="30dp"
+
+        ></ImageView>
+
+<EditText
+    android:id="@+id/log_in_phone_number"
+    android:layout_below="@+id/log_in_logo"
+    android:layout_width="match_parent"
+    android:hint="Phone Number"
+    android:padding="10dp"
+    android:inputType="number"
+    android:layout_height="wrap_content"
+    ></EditText>
+    <EditText
+        android:id="@+id/log_in_password"
+        android:layout_below="@id/log_in_phone_number"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"></EditText>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/log_in_password"
+        >
+
+        <CheckBox
+            android:id="@+id/remember_me_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Material.Drawable.CheckBox"
+            app:cbd_strokeColor = "@color/black"
+            android:text="Remember me"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="17dp"
+            ></CheckBox>
+
+        <TextView
+            android:id="@+id/forget_password_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Passwod?"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="80dp"
+            ></TextView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/log_in_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="Log in"
+       android:layout_below="@+id/linear_layout_1"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="@drawable/buttons"
+        android:layout_centerHorizontal="true"></Button>
+
+    <TextView
+        android:id="@+id/admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm an Admin?"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/log_in_btn2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="23dp">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/non_admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm not an Admin?"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/log_in_btn2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="25dp">
+
+
+    </TextView>
+</RelativeLayout>
